@@ -80,8 +80,8 @@ function renderPlainText(data, plays) {
     }석)\n`;
   }
 
-  result += `총액: ${usd(totalAmount())}\n`;
-  result += `적립 포인트: ${totalVolumeCredits()}점\n`;
+  result += `총액: ${usd(data.totalAmount)}\n`;
+  result += `적립 포인트: ${data.totalVolumeCredits}점\n`;
   return result;
 
   function usd(aNumber) {
