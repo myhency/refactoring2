@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "babel ./src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +15,7 @@
     "@babel/core": "^7.17.5"
   },
   "devDependencies": {
+    "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.16.11"
   }
 }

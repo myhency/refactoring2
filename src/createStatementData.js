@@ -1,5 +1,5 @@
 class PerformanceCalculator {
-  constructor(aPerformance, ) {
+  constructor(aPerformance, aPlay) {
     this.performance = aPerformance;
     this.play = aPlay;
   }
@@ -67,7 +67,7 @@ export default function createStatementData(invoice, plays) {
   }
 
   function amountFor(aPerformance) {
-    return PerformanceCalculator(aPerformance, playFor(aPerformance)).amount;
+    return new PerformanceCalculator(aPerformance, playFor(aPerformance)).amount;
   }
 
   function volumeCreditsFor(aPerformance) {
